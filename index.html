@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> Career quiz
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Interest Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Career Interest Quiz</h1>
+        <p>Find out what career path suits you best based on your interests and preferences!</p>
+    </header>
+
+    <section id="quiz-container">
+        <form id="career-quiz-form">
+            <div class="quiz-question">
+                <h3>1. What type of work environment do you prefer?</h3>
+                <input type="radio" name="environment" value="office" required> Office / Corporate<br>
+                <input type="radio" name="environment" value="outdoor"> Outdoor / Field Work<br>
+                <input type="radio" name="environment" value="remote"> Remote / Work from Home<br>
+            </div>
+
+            <div class="quiz-question">
+                <h3>2. How do you feel about working in teams?</h3>
+                <input type="radio" name="teamwork" value="yes" required> I enjoy working in teams<br>
+                <input type="radio" name="teamwork" value="no"> I prefer working alone<br>
+            </div>
+
+            <div class="quiz-question">
+                <h3>3. Which of the following skills do you enjoy using most?</h3>
+                <input type="radio" name="skills" value="creative" required> Creative / Artistic skills<br>
+                <input type="radio" name="skills" value="technical"> Analytical / Problem-solving skills<br>
+                <input type="radio" name="skills" value="people"> Interpersonal / Social skills<br>
+            </div>
+
+            <div class="quiz-question">
+                <h3>4. What kind of impact would you like your job to have?</h3>
+                <input type="radio" name="impact" value="helping" required> Helping others or contributing to society<br>
+                <input type="radio" name="impact" value="innovation"> Innovating or creating something new<br>
+                <input type="radio" name="impact" value="leadership"> Leading and managing teams<br>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result-container" style="display: none;">
+            <h3>Your Suggested Career Path:</h3>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Career Interest Quiz</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
